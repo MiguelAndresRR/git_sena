@@ -16,13 +16,20 @@ class User extends Authenticatable
         'user',
         'password',
         'id_rol',
-        'documento',
+        'documento_usuario',
         'telefono_usuario',
+        'nombre_usuario',
+        'apellido_usuario',
+        'correo_usuario'
     ];
 
     protected $hidden = [
         'password',
         'user'
     ];
+        public function rol()
+    {
+        return $this->belongsTo(Rol::class, 'id_rol');
+    }
 
 }

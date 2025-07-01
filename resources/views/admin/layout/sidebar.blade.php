@@ -20,6 +20,14 @@
                 <span class="span-subtittle">Compras</span>
             </a>
             <a onclick="window.location.href='{{ route('admin.dashboard') }}'" class="nav_link">
+                <i class="fa-solid fa-boxes-stacked"></i>
+                <span class="span-subtittle">Inventario</span>
+            </a>
+            <a onclick="window.location.href='{{ route('admin.dashboard') }}'" class="nav_link">
+                <i class="fa-solid fa-receipt"></i>
+                <span class="span-subtittle">Ventas</span>
+            </a>
+            <a onclick="window.location.href='{{ route('admin.usuarios.index') }}'" class="nav_link">
                 <i class="fa-solid fa-users"></i>
                 <span class="span-subtittle">Usuarios</span>
             </a>
