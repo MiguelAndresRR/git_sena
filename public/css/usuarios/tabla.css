@@ -1,0 +1,162 @@
+table th,
+table td {
+    padding: 5px;
+    font-size: 14px;
+    border-collapse: collapse;
+    width: 80%;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: black;
+}
+/* Específico para columnas */
+th:nth-child(1),
+td:nth-child(1) {
+    width: 50px;
+} /* ID */
+th:nth-child(2),
+td:nth-child(2) {
+    width: 100px;
+} /* usuario */
+th:nth-child(3),
+td:nth-child(3) {
+    width: 100px;
+} /* rol */
+th:nth-child(4),
+td:nth-child(4) {
+    width: 100px;
+} /* Categoría */
+th:nth-child(5),
+td:nth-child(5) {
+    width: 100px;
+} /* Unidad */
+th:nth-child(6),
+td:nth-child(6) {
+    width: 100px;
+}
+th:nth-child(7),
+td:nth-child(7) {
+    width: 100px;
+}
+tbody {
+    background-color: #ffffff;
+    color: #000000;
+    & td {
+        text-align: center;
+        width: 10px;
+    }
+}
+.btn-confirmar {
+    background-color: #000000 !important;
+    color: #fff !important;
+    border: none;
+    padding: 8px 16px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    outline: none;
+    margin-right: 5px;
+}
+
+.btn-confirmar:hover {
+    background-color: #ffffff !important;
+    border-radius: 10px;
+    color: #000000 !important;
+    transform: scale(1.05);
+    border: 2px solid #9e12e4;
+}
+
+.btn-cancelar {
+    background-color: #000000 !important;
+    color: #fff !important;
+    border: none;
+    padding: 8px 16px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    outline: none;
+    margin-left: 5px;
+}
+
+.btn-cancelar:hover {
+    background-color: #ffffff !important;
+    border-radius: 10px;
+    color: #000000 !important;
+    transform: scale(1.05);
+    border: 2px solid #9e12e4;
+}
+#botones button {
+    width: 30%;
+    border-radius: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    height: 40px;
+    border: 2px solid transparent;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+#botones .btn-editar:hover {
+    background-color: #ffd904;
+    transform: scale(1.05);
+    border: #ffb53e 2px solid;
+}
+#botones .btn-ver:hover {
+    background-color: #9e12e4;
+    transform: scale(1.05);
+    border: #ff00e6 2px solid;
+}
+#botones .borrar-boton:hover {
+    background-color: #fe2252;
+    transform: scale(1.05);
+    border: #ff2600 2px solid;
+}
+/* encabezado tabla */
+thead {
+    color: #ffffff;
+    margin: 0;
+    & th {
+        text-align: center;
+        background-color: #000000;
+        font-weight: bold;
+        font-size: 16px;
+        align-content: center;
+        padding: 4px;
+        height: 40px;
+        user-select: none;
+        -webkit-user-select: none; /* Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+/Edge */
+        & #crear-modal {
+            background-color: #ffffff;
+            width: 100%;
+            color: #000000;
+            border: none;
+            border: 2px solid transparent;
+            outline: none;
+            border-radius: 10px;
+            padding: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                background-color: #00ff4c;
+                color: #ffffff;
+                border: #0c9330 2px solid;
+            }
+        }
+    }
+}
+table {
+    width: 100%;
+    border-spacing: 0;
+}
+.container-productos-class {
+    height: 75vh;
+    overflow-y: auto;
+}
+.tableFixHead thead tr th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}

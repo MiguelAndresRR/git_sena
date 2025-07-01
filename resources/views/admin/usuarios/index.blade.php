@@ -12,13 +12,13 @@
     <script src="https://kit.fontawesome.com/171f3dc321.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="{{ asset('css/productos/productos.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/usuarios/usuarios.css') }}">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link rel="stylesheet" href="{{ asset('css/productos/editar.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/productos/tabla.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/productos/paginacion.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/usuarios/editar.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/usuarios/tabla.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/usuarios/paginacion.css') }}">
     <link rel="stylesheet" href="{{ asset('css/dashboard/dashboard.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/productos/mostrar.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/usuarios/mostrar.css') }}">
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">

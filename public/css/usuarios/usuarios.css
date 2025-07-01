@@ -1,0 +1,191 @@
+.content-productos {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100vw;
+    
+}
+
+.registrar-producto-container {
+    border-radius: 10px;
+    height: auto;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.registrar-producto-container h2 {
+    place-items: left;
+    justify-items: left;
+    padding: 4px;
+    margin-bottom: 20px;
+}
+.registrar-producto-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    & input {
+        border: 2px solid transparent;
+        outline: none;
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #ffffff;
+        color: #000000;
+        font-size: 16px;
+        margin-bottom: 10px;
+        &:focus {
+            border: 2px solid #9e12e4;
+            box-shadow: 0 0 5px #9e12e4;
+            transition: all 0.1s ease-in-out;
+        }
+    }
+}
+& select {
+    border: 2px solid transparent;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #f0f0f0
+        url('data:image/svg+xml;utf8,<svg fill="gray" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>')
+        no-repeat right 0.75rem center;
+    padding-right: 2rem;
+    border-radius: 0.75rem;
+    &:focus {
+        border: 2px solid #9e12e4;
+        box-shadow: 0 0 5px #9e12e4;
+        transition: all 0.3s ease-in-out;
+    }
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.registrar-producto-container button {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    outline: none;
+    background-color: black;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        background-color: #ffffff;
+        border-radius: 10px;
+        color: #000000;
+        transform: scale(1.03);
+        border: 2px solid #9e12e4;
+    }
+}
+.container-modal-crear {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.container-modal-crear.mostrar {
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.container-modal-crear .modal {
+    width: 100%;
+    display: flex;
+    margin: 0 500px;
+    padding: 50px;
+    background-color: #000000;
+    z-index: 1;
+    opacity: 0.6;
+}
+form {
+    width: 100%;
+    display: flex;
+}
+.registrar-producto-container {
+    background-color: white;
+    opacity: none;
+    width: 50%;
+    align-items: none;
+    justify-content: none;
+    flex-direction: none;
+}
+
+.form-eliminar {
+    margin: 0;
+    padding: 0;
+}
+
+.filtros {
+    display: flex;
+    margin-bottom: 10px;
+    padding: 5px;
+    justify-content: left;
+    gap: 10px;
+    width: 100%;
+}
+.form-control {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+#buscar {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    outline: none;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+
+    transition: all 0.3s ease-in-out;
+    &:focus {
+        border: 2px solid #9e12e4;
+        box-shadow: 0 0 5px #9e12e4;
+    }
+}
+#limpiar-filtros {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    outline: none;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 16px;
+    justify-content: center;
+    width: 500px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        background-color: #f48637 !important;
+        border-radius: 10px;
+        color: #000000 !important;
+        transform: scale(1.05);
+        border: 2px solid #e47012;
+    }
+}
