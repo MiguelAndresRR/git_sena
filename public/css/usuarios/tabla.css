@@ -5,40 +5,49 @@ table td {
     border-collapse: collapse;
     width: 80%;
 }
+table td {
+    border-bottom: #cecece 2px solid;
+    border-right: #cecece 2px solid;
+}
 table {
     table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
     background-color: black;
 }
-/* Específico para columnas */
+/* ID */
 th:nth-child(1),
 td:nth-child(1) {
     width: 100px;
-} /* ID */
+} /* usuario */
 th:nth-child(2),
 td:nth-child(2) {
     width: 100px;
-} /* usuario */
+} /* password */
 th:nth-child(3),
 td:nth-child(3) {
     width: 300px;
-} /* rol */
+    word-wrap: break-word;
+} /* Rol */
 th:nth-child(4),
 td:nth-child(4) {
-    width: 200px;
-} /* Categoría */
+    width: 150px;
+} /* Nombre */
 th:nth-child(5),
 td:nth-child(5) {
-    width: 100px;
-} /* Unidad */
+    width: 150px;
+} /* Apellido */
 th:nth-child(6),
 td:nth-child(6) {
-    width: 100px;
-}
+    width: 150px;
+}/*correo*/
 th:nth-child(7),
 td:nth-child(7) {
-    width: 100px;
+    width: 200px;
+}
+th:nth-child(8),
+td:nth-child(8) {
+    width: 150px;
 }
 tbody {
     background-color: #ffffff;

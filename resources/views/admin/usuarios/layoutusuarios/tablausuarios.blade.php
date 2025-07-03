@@ -10,6 +10,7 @@
                 <th>Apellidos</th>
                 <th>Correo</th>
                 <th>Telefono</th>
+                <th>Documento</th>
                 <th>
                     <button type="submit" class="btn" id='crear-modal'>
                         <i class="fa-solid fa-plus"></i>
@@ -29,6 +30,7 @@
                     <td>{{$usuario->apellido_usuario}}</td>
                     <td>{{$usuario->correo_usuario}}</td>
                     <td>{{$usuario->telefono_usuario}}</td>
+                    <td>{{$usuario->documento_usuario}}</td>
                     <td id="botones">
                         <button type="button" class="btn-ver" data-id_producto="{{ $usuario->id_usuario}}">
                             <i class="fa-solid fa-eye"></i>
@@ -55,6 +57,6 @@
     </table>
 </div>
 <div class="paginacion">
-    @include('admin.usuarios.layoutproductos.paginacion')
+    @include('admin.usuarios.layoutusuarios.paginacion')
 </div>
 <script src="{{ asset('js/productos/borrar.js') }}"></script>

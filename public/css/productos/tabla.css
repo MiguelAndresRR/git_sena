@@ -5,6 +5,10 @@ table td {
     border-collapse: collapse;
     width: 80%;
 }
+table td {
+    border-bottom: #cecece 2px solid;
+    border-right: #cecece 2px solid;
+}
 table {
     width: 100%;
     border-collapse: collapse;

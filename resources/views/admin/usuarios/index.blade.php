@@ -45,10 +45,11 @@
     @include('admin.layout.sidebar')
     <div class="content-productos">
         <div class="header">
-            <h1><i class="fa-solid fa-cubes"></i></h1>
+            <h1><i class="fa-solid fa-users"></i>Usuarios</h1>
         </div>
+        @include('admin.usuarios.layoutusuarios.filtros')
         <div id="tabla-productos">
-            @include('admin.usuarios.layoutproductos.tablausuarios')
+            @include('admin.usuarios.layoutusuarios.tablausuarios')
         </div>
     </div>
 
