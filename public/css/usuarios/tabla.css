@@ -18,7 +18,7 @@ table {
 /* ID */
 th:nth-child(1),
 td:nth-child(1) {
-    width: 100px;
+    width: 80px;
 } /* usuario */
 th:nth-child(2),
 td:nth-child(2) {
@@ -26,7 +26,7 @@ td:nth-child(2) {
 } /* password */
 th:nth-child(3),
 td:nth-child(3) {
-    width: 300px;
+    width: 200px;
     word-wrap: break-word;
 } /* Rol */
 th:nth-child(4),
@@ -47,7 +47,7 @@ td:nth-child(7) {
 }
 th:nth-child(8),
 td:nth-child(8) {
-    width: 150px;
+    width: 100px;
 }
 tbody {
     background-color: #ffffff;

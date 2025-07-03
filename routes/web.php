@@ -15,6 +15,7 @@ Route::middleware('prevent-back')->group(function () {
             Route::get('/dashboard', function () {
                 return view('admin.dashboard');
             })->name('dashboard');
+            Route::get('productos', [ProductoController::class, 'index']);
         });
         // Mostrar la lista de productos
         Route::get('admin/productos/index', [ProductoController::class, 'index'])->name('admin.productos.index');
@@ -33,8 +34,11 @@ Route::middleware('prevent-back')->group(function () {
         // Logout
         Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
-        
         //usuarios
         Route::get('admin/usuarios/index', [UsuarioController::class, 'index'])->name('admin.usuarios.index');
+        // Eliminar usuario
+        Route::delete('admin/usuarios/{usuario}', [UsuarioController::class, 'destroy'])->name('admin.usuarios.destroy');
+
+        
     });
 });

@@ -43,8 +43,8 @@
                             <i class="fa-solid fa-trash"></i>
                         </button>
                         @if ($usuario->id_usuario)
-                            <form id="formEliminar {{ $usuario->id_usuario }}" method="POST"
-                                action="{{ route('admin.usuarios.index', $usuario->id_usuario)}}"
+                            <form id="formEliminar{{ $usuario->id_usuario }}" method="POST"
+                                action="{{ route('admin.usuarios.destroy',$usuario->id_usuario)}}"
                                 style="display: none;">
                                 @csrf
                                 @method('DELETE')
@@ -57,6 +57,6 @@
     </table>
 </div>
 <div class="paginacion">
-    @include('admin.usuarios.layoutusuarios.paginacion')
+@include('admin.usuarios.layoutusuarios.paginacion')
 </div>
-<script src="{{ asset('js/productos/borrar.js') }}"></script>
+<script src="{{ asset('js/usuarios/borrar.js') }}"></script>
