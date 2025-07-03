@@ -22,10 +22,9 @@
             @foreach ($usuarios as $usuario)
                 <tr>
                     <td>{{ $usuario->id_usuario }}</td>
-                    <td>{{ $usuario->User }}</td>
+                    <td>{{ $usuario->user }}</td>
                     <td>{{ $usuario->password }}</td>
-                    <td data-id-categoria="{{ $usuario->id_rol }}">{{ $usuario->rol->nombre_producto }}
-                    </td>
+                    <td data-id-categoria="{{ $usuario->id_rol }}">{{ $usuario->rol->nombre_rol }}</td>
                     <td>{{$usuario->nombre_usuario}}</td>
                     <td>{{$usuario->apellido_usuario}}</td>
                     <td>{{$usuario->correo_usuario}}</td>

@@ -6,6 +6,7 @@ table td {
     width: 80%;
 }
 table {
+    table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
     background-color: black;
@@ -13,7 +14,7 @@ table {
 /* Específico para columnas */
 th:nth-child(1),
 td:nth-child(1) {
-    width: 50px;
+    width: 100px;
 } /* ID */
 th:nth-child(2),
 td:nth-child(2) {
@@ -21,11 +22,11 @@ td:nth-child(2) {
 } /* usuario */
 th:nth-child(3),
 td:nth-child(3) {
-    width: 100px;
+    width: 300px;
 } /* rol */
 th:nth-child(4),
 td:nth-child(4) {
-    width: 100px;
+    width: 200px;
 } /* Categoría */
 th:nth-child(5),
 td:nth-child(5) {
