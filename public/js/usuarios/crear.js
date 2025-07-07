@@ -1,17 +1,23 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const btnAbrirModal = document.querySelector("#crear-modal");
+    const btnCerrarModal = document.querySelector("#ocultar-modal-crear1");
+    const contModal = document.querySelector(".container-modal-crear");
 
-    const btnOcultarModalCrear = document.querySelector("#ocultar-modal-crear");
-    const contModalCrear = document.querySelector(".container-modal-crear");
+    // Abre el modal
+    if (btnAbrirModal) {
+        btnAbrirModal.addEventListener("click", (e) => {
+            e.preventDefault();
+            contModal.classList.add("mostrar");
+            console.log("✅ Modal abierto");
+        });
+    }
 
-    btnOcultarModalCrear.addEventListener("click", (e) => {
-        e.preventDefault();
-        contModalCrear.classList.remove("mostrar");
-    });
-
-
-    document.addEventListener("click", function (e) {
-        const btn = e.target.closest("#crear-modal");
-        if (!btn) return;
-
-        e.preventDefault();
-        contModalCrear.classList.add("mostrar");
-    });
+    // Cierra el modal
+    if (btnCerrarModal) {
+        btnCerrarModal.addEventListener("click", (e) => {
+            e.preventDefault();
+            contModal.classList.remove("mostrar");
+            console.log("✅ Modal cerrado");
+        });
+    }
+});

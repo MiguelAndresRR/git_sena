@@ -43,5 +43,9 @@
                 <i class="fa-solid fa-right-from-bracket"></i>
                 <span class="span-subtittle">Cerrar Sesión</span>
             </a>
+            <div class="user-profile">
+                <span class="span-subtittle" style="color: aliceblue">{{ Auth::user()->user }}
+                    ('{{ Auth::user()->rol->nombre_rol }}')</span>
+            </div>
         </div>
-    <script src="{{ asset('js/dashboard/dashboard.js') }}"></script>
+        <script src="{{ asset('js/dashboard/dashboard.js') }}"></script>

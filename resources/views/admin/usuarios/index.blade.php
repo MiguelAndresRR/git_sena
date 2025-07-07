@@ -43,7 +43,7 @@
         @endif
     </div>
     @include('admin.layout.sidebar')
-    <div class="content-productos">
+    <div class="content-usuarios">
         <div class="header">
             <h1><i class="fa-solid fa-users"></i>Usuarios</h1>
         </div>
@@ -52,6 +52,8 @@
             @include('admin.usuarios.layoutusuarios.tablausuarios')
         </div>
     </div>
-
+    @include('admin.usuarios.modal.edit')
+    {{-- @include('admin.usuarios.modal.mostrar') --}}
+    @include('admin.usuarios.modal.create')
 </body>
 </html>

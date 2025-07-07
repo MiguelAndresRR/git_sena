@@ -3,8 +3,8 @@
     <div class="filtros">
         <select name="rol" id="rol" class="form-control">
             <option value="">Todos los Roles</option>
-            @foreach ($usuarios as $usuario)
-                <option value="{{ $usuario->id_rol}}">{{ $usuario->rol->nombre_rol }}</option>
+            @foreach ($roles as $rol)
+                <option value="{{ $rol->nombre_rol}}">{{ $rol->nombre_rol}}</option>
             @endforeach
         </select>
         <select name="entries" id="entries" class="form-control">

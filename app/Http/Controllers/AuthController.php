@@ -43,6 +43,9 @@ class AuthController extends Controller
                 return redirect()->route('user.dashboard');
             }
         }
+        return back()->withErrors([
+            'login_error' => 'Usuario, contraseña o rol incorrectos.'
+        ])->withInput();
     }
 
     public function logout(Request $request)

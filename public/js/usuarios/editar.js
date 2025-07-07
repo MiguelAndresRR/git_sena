@@ -1,5 +1,5 @@
-const btnOcultarModalEdit = document.querySelector("#ocultar-modal-editar");
-const contModalEdit = document.querySelector(".container-modal-editar");
+const btnOcultarModalEdit = document.querySelector("#ocultar-modal-editar2");
+const contModalEdit = document.querySelector("#container-modal-editar2");
 
 btnOcultarModalEdit.addEventListener("click", (e) => {
     e.preventDefault();
@@ -7,24 +7,34 @@ btnOcultarModalEdit.addEventListener("click", (e) => {
 });
 
 document.addEventListener("click", function (e) {
-    const btn = e.target.closest(".btn-editar");
+    const btn = e.target.closest("#btn-editar1");
     if (!btn) return;
 
     e.preventDefault();
-    const id_producto = btn.dataset.id_producto;
+    const id_usuario = btn.dataset.id_usuario;
 
-    fetch(`/admin/productos/${id_producto}`)
-        .then((response) => response.json())
+    fetch(`/admin/usuarios/${id_usuario}`)
+        .then((response) => response.text())
         .then((data) => {
-            document.getElementById("nombre_producto").value =
-                data.nombre_producto;
-            document.getElementById("precio_producto").value =
-                data.precio_producto;
-            document.getElementById("id_categoria_producto").value =
-                data.id_categoria_producto;
-            document.getElementById("id_unidad_peso_producto").value =
-                data.id_unidad_peso_producto;
-            document.getElementById("form_editar").action = `/admin/productos/${id_producto}`;
+            console.log('datos recibidos', data)
+            document.getElementById("nombre_usuario").value =
+                data.nombre_usuario;
+            document.getElementById("apellido_usuario").value =
+                data.apellido_usuario;
+            document.getElementById("documento_usuario").value =
+                data.documento_usuario;
+            document.getElementById("telefono_usuario").value =
+                data.telefono_usuario;
+            document.getElementById("correo_usuario").value =
+                data.correo_usuario;
+            document.getElementById("user").value =
+                data.user;
+            document.getElementById("password").value =
+                data.password;
+            document.getElementById("id_rol").value =
+                data.id_rol;
+                
+            document.getElementById("form_editar1").action = `/admin/usuarios/${id_usuario}`;
             contModalEdit.classList.add("mostrar");
         })
         .catch((error) => console.error("Error al cargar datos:", error));

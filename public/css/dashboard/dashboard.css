@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +8,7 @@ body {
     display: flex;
     flex-direction: row;
     height: 100vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     background: linear-gradient(45deg, #d3cce3, #fdfbfb, #c0d6e4, #e0c3fc);
     background-size: 300% 300%;
     animation: color 13s ease-in-out infinite;
@@ -17,9 +16,17 @@ body {
 }
 
 @keyframes color {
-    0%, 100% { background-position: 0% 50%; }
-    25%, 50% { background-position: 100% 50%; }
-    75% { background-position: 0% 50%; }
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+    25%,
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 0% 50%;
+    }
 }
 
 /* Sidebar */
@@ -32,6 +39,8 @@ body {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    z-index: 1;
+    position: relative;
 }
 
 .sidebar.expanded {
@@ -98,4 +107,29 @@ body {
     body {
         flex-direction: column;
     }
+}
+.layout-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.content-productos {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.user-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
 }

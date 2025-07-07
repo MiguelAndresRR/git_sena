@@ -3,52 +3,25 @@ table td {
     padding: 5px;
     font-size: 14px;
     border-collapse: collapse;
-    width: 80%;
 }
 table td {
     border-bottom: #cecece 2px solid;
     border-right: #cecece 2px solid;
 }
 table {
-    table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
     background-color: black;
 }
-/* ID */
-th:nth-child(1),
-td:nth-child(1) {
-    width: 80px;
-} /* usuario */
-th:nth-child(2),
-td:nth-child(2) {
-    width: 100px;
-} /* password */
-th:nth-child(3),
-td:nth-child(3) {
-    width: 200px;
-    word-wrap: break-word;
-} /* Rol */
-th:nth-child(4),
-td:nth-child(4) {
-    width: 150px;
-} /* Nombre */
-th:nth-child(5),
-td:nth-child(5) {
-    width: 150px;
-} /* Apellido */
-th:nth-child(6),
-td:nth-child(6) {
-    width: 150px;
-}/*correo*/
-th:nth-child(7),
-td:nth-child(7) {
-    width: 200px;
-}
-th:nth-child(8),
-td:nth-child(8) {
-    width: 100px;
-}
+th:nth-child(1), td:nth-child(1) { width: 50px; }    /* ID */
+th:nth-child(2), td:nth-child(2) { width: 120px; }   /* Usuario */
+th:nth-child(3), td:nth-child(3) { width: 120px; }   /* Rol */
+th:nth-child(4), td:nth-child(4) { width: 150px; }   /* Nombres */
+th:nth-child(5), td:nth-child(5) { width: 150px; }   /* Apellidos */
+th:nth-child(6), td:nth-child(6) { width: 200px; }   /* Correo */
+th:nth-child(7), td:nth-child(7) { width: 130px; }   /* Teléfono */
+th:nth-child(8), td:nth-child(8) { width: 130px; }   /* Documento */
+th:nth-child(9), td:nth-child(9) { width: 100px; }   /* Botones */
 tbody {
     background-color: #ffffff;
     color: #000000;
@@ -162,11 +135,17 @@ table {
     border-spacing: 0;
 }
 .container-productos-class {
-    height: 75vh;
+    height: 70vh;
     overflow-y: auto;
 }
 .tableFixHead thead tr th {
     position: sticky;
     top: 0;
     z-index: 1;
+}
+td#botones {
+    min-width: 150px;
+}
+#botones button {
+    box-sizing: border-box;
 }

@@ -100,7 +100,7 @@ class ProductoController extends Controller
     {
         $request->validate([
             'nombre_producto' => 'required|string|max:20',
-            'precio_producto' => 'required|numeric|min:0',
+            'precio_producto' => 'required|numeric|min:0|max:9999999.99',
             'id_categoria_producto' => 'required|exists:categoria_producto,id_categoria_producto',
             'id_unidad_peso_producto' => 'required|exists:unidad_peso_producto,id_unidad_peso_producto',
         ]);

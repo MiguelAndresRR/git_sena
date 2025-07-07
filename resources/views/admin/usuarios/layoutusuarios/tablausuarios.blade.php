@@ -4,7 +4,6 @@
             <tr>
                 <th>ID</th>
                 <th>Usuario</th>
-                <th>Password</th>
                 <th>Rol</th>
                 <th>Nombres</th>
                 <th>Apellidos</th>
@@ -24,7 +23,6 @@
                 <tr>
                     <td>{{ $usuario->id_usuario }}</td>
                     <td>{{ $usuario->user }}</td>
-                    <td>{{ $usuario->password }}</td>
                     <td data-id-categoria="{{ $usuario->id_rol }}">{{ $usuario->rol->nombre_rol }}</td>
                     <td>{{$usuario->nombre_usuario}}</td>
                     <td>{{$usuario->apellido_usuario}}</td>
@@ -32,14 +30,14 @@
                     <td>{{$usuario->telefono_usuario}}</td>
                     <td>{{$usuario->documento_usuario}}</td>
                     <td id="botones">
-                        <button type="button" class="btn-ver" data-id_producto="{{ $usuario->id_usuario}}">
+                        <button type="button" class="btn-ver" id="btn-ver1" data-id_usuario="{{ $usuario->id_usuario}}">
                             <i class="fa-solid fa-eye"></i>
                         </button>
-                        <button type="button" class="btn-editar" data-id_producto="{{ $usuario->id_usuario}}">
+                        <button type="button" class="btn-editar" id="btn-editar1" data-id_usuario="{{$usuario->id_usuario}}">
                             <i class="fa-solid fa-pen-to-square"></i>
                         </button>
                         <button type="button" class="borrar-boton btn btn-danger"
-                            data-id_producto="{{ $usuario->id_usuario }}">
+                            data-id_usuario="{{ $usuario->id_usuario}}">
                             <i class="fa-solid fa-trash"></i>
                         </button>
                         @if ($usuario->id_usuario)
@@ -57,6 +55,6 @@
     </table>
 </div>
 <div class="paginacion">
-@include('admin.usuarios.layoutusuarios.paginacion')
+    @include('admin.usuarios.layoutusuarios.paginacion')
 </div>
 <script src="{{ asset('js/usuarios/borrar.js') }}"></script>

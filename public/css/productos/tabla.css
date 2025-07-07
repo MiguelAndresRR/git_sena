@@ -3,7 +3,6 @@ table td {
     padding: 5px;
     font-size: 14px;
     border-collapse: collapse;
-    width: 80%;
 }
 table td {
     border-bottom: #cecece 2px solid;
@@ -152,7 +151,7 @@ table {
     border-spacing: 0;
 }
 .container-productos-class {
-    height: 75vh;
+    height: 70vh;
     overflow-y: auto;
 }
 .tableFixHead thead tr th {

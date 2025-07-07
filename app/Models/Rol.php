@@ -3,9 +3,14 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Models\User;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Rol extends Model
 {
+    use HasFactory;
+
     protected $table ='rol';
 
     protected $primaryKey = 'id_rol';
@@ -16,9 +21,9 @@ class Rol extends Model
         'id_rol',
         'nombre_rol'
     ];
-    public function rol(): HasMany
+    public function usuarios(): HasMany
     {
-        return $this->hasMany(Rol::class, 'id_rol');
+        return $this->hasMany(User::class, 'id_rol');
     }
 
 }

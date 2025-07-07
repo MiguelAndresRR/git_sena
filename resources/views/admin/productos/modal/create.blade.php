@@ -13,7 +13,7 @@
                     style="color: #FFD43B;"></i>Precio del
                 producto</label>
             <input type="number" class="form-control" id="precio_producto"
-                name="precio_producto"placeholder="Precio del producto" max="10" required>
+                name="precio_producto"placeholder="Precio del producto"required>
 
             <label for="id_categoria_producto" class="form-label"><i class="fa-sharp fa-solid fa-layer-group"
                     style="color: #ff0000;"></i>Categoría</label>
@@ -45,7 +45,8 @@
 
             <button type="submit">Crear</button>
         </form>
-        <button type="submit" class="btn" id='ocultar-modal-crear'>Cancelar</button>
+        <button type="button" class="btn" id="ocultar-modal-crear">Cancelar</button>
+
     </div>
 </div>
 <script src="{{ asset('js/productos/crear.js') }}"></script>
